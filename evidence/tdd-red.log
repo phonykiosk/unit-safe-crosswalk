@@ -1,0 +1,632 @@
+WARNING: File `gltest.config.yaml` not found in the current directory, using default config, create a `gltest.config.yaml` file to manage multiple networks
+INFO: Using the following configuration:
+INFO:   RPC URL: http://127.0.0.1:4000/api
+INFO:   Selected Network: localnet
+INFO:   Available networks: ['localnet', 'studionet', 'testnet_asimov', 'testnet_bradbury']
+INFO:   Selected chain type: localnet
+INFO:   Available chains: localnet, studionet, testnet_asimov, testnet_bradbury
+INFO:   Contracts directory: contracts
+INFO:   Artifacts directory: artifacts
+INFO:   Environment: .env
+INFO:   Default wait interval: 3000 ms
+INFO:   Default wait retries: 50
+INFO:   Leader only mode: False
+FFFFFFFFFFFFFFFFF                                                        [100%]
+================================== FAILURES ===================================
+______________ test_real_documents_consensus_and_exact_transform ______________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x000001DD40934C20>
+
+    def test_real_documents_consensus_and_exact_transform(direct_vm,direct_deploy):
+>       c=deploy(direct_vm,direct_deploy);approved(direct_vm,c)
+                                          ^^^^^^^^^^^^^^^^^^^^^
+
+contributions\genlayer-2026-10-21\profile04\contracts\unit-safe-crosswalk\tests\test_crosswalk.py:37: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+contributions\genlayer-2026-10-21\profile04\contracts\unit-safe-crosswalk\tests\test_crosswalk.py:34: in approved
+    locked(vm,c,reverse);c.assess('curl')
+    ^^^^^^^^^^^^^^^^^^^^
+contributions\genlayer-2026-10-21\profile04\contracts\unit-safe-crosswalk\tests\test_crosswalk.py:30: in locked
+    c.register('curl',json.dumps(spec(reverse)))
+    ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <CalldataProxy for <_contract_unit_safe_crosswalk.UnitSafeCrosswalk object at 0x000001DD40A23EC0>>
+name = 'register'
+
+    def _proxy_getattr(self: Any, name: str) -> Any:
+        inst = object.__getattribute__(self, '_instance')
+>       attr = getattr(inst, name)
+               ^^^^^^^^^^^^^^^^^^^
+E       AttributeError: 'UnitSafeCrosswalk' object has no attribute 'register'
+
+contributions\genlayer-2026-10-21\tooling\.venv\Lib\site-packages\gltest\direct\loader.py:427: AttributeError
+_______________ test_independent_semantic_disagreement_rejected _______________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x000001DD40A40680>
+
+    def test_independent_semantic_disagreement_rejected(direct_vm,direct_deploy):
+>       c=deploy(direct_vm,direct_deploy);approved(direct_vm,c)
+                                          ^^^^^^^^^^^^^^^^^^^^^
+
+contributions\genlayer-2026-10-21\profile04\contracts\unit-safe-crosswalk\tests\test_crosswalk.py:45: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+contributions\genlayer-2026-10-21\profile04\contracts\unit-safe-crosswalk\tests\test_crosswalk.py:34: in approved
+    locked(vm,c,reverse);c.assess('curl')
+    ^^^^^^^^^^^^^^^^^^^^
+contributions\genlayer-2026-10-21\profile04\contracts\unit-safe-crosswalk\tests\test_crosswalk.py:30: in locked
+    c.register('curl',json.dumps(spec(reverse)))
+    ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <CalldataProxy for <_contract_unit_safe_crosswalk.UnitSafeCrosswalk object at 0x000001DD40B11670>>
+name = 'register'
+
+    def _proxy_getattr(self: Any, name: str) -> Any:
+        inst = object.__getattribute__(self, '_instance')
+>       attr = getattr(inst, name)
+               ^^^^^^^^^^^^^^^^^^^
+E       AttributeError: 'UnitSafeCrosswalk' object has no attribute 'register'
+
+contributions\genlayer-2026-10-21\tooling\.venv\Lib\site-packages\gltest\direct\loader.py:427: AttributeError
+______________________ test_forged_leader_quote_rejected ______________________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x000001DD40B28FE0>
+
+    def test_forged_leader_quote_rejected(direct_vm,direct_deploy):
+>       c=deploy(direct_vm,direct_deploy);approved(direct_vm,c)
+                                          ^^^^^^^^^^^^^^^^^^^^^
+
+contributions\genlayer-2026-10-21\profile04\contracts\unit-safe-crosswalk\tests\test_crosswalk.py:50: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+contributions\genlayer-2026-10-21\profile04\contracts\unit-safe-crosswalk\tests\test_crosswalk.py:34: in approved
+    locked(vm,c,reverse);c.assess('curl')
+    ^^^^^^^^^^^^^^^^^^^^
+contributions\genlayer-2026-10-21\profile04\contracts\unit-safe-crosswalk\tests\test_crosswalk.py:30: in locked
+    c.register('curl',json.dumps(spec(reverse)))
+    ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <CalldataProxy for <_contract_unit_safe_crosswalk.UnitSafeCrosswalk object at 0x000001DD40BCD640>>
+name = 'register'
+
+    def _proxy_getattr(self: Any, name: str) -> Any:
+        inst = object.__getattribute__(self, '_instance')
+>       attr = getattr(inst, name)
+               ^^^^^^^^^^^^^^^^^^^
+E       AttributeError: 'UnitSafeCrosswalk' object has no attribute 'register'
+
+contributions\genlayer-2026-10-21\tooling\.venv\Lib\site-packages\gltest\direct\loader.py:427: AttributeError
+_______________ test_fractional_integer_conversion_is_rejected ________________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x000001DD40B8EAC0>
+
+    def test_fractional_integer_conversion_is_rejected(direct_vm,direct_deploy):
+>       c=deploy(direct_vm,direct_deploy);approved(direct_vm,c,True)
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+contributions\genlayer-2026-10-21\profile04\contracts\unit-safe-crosswalk\tests\test_crosswalk.py:56: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+contributions\genlayer-2026-10-21\profile04\contracts\unit-safe-crosswalk\tests\test_crosswalk.py:34: in approved
+    locked(vm,c,reverse);c.assess('curl')
+    ^^^^^^^^^^^^^^^^^^^^
+contributions\genlayer-2026-10-21\profile04\contracts\unit-safe-crosswalk\tests\test_crosswalk.py:30: in locked
+    c.register('curl',json.dumps(spec(reverse)))
+    ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <CalldataProxy for <_contract_unit_safe_crosswalk.UnitSafeCrosswalk object at 0x000001DD40C63A70>>
+name = 'register'
+
+    def _proxy_getattr(self: Any, name: str) -> Any:
+        inst = object.__getattribute__(self, '_instance')
+>       attr = getattr(inst, name)
+               ^^^^^^^^^^^^^^^^^^^
+E       AttributeError: 'UnitSafeCrosswalk' object has no attribute 'register'
+
+contributions\genlayer-2026-10-21\tooling\.venv\Lib\site-packages\gltest\direct\loader.py:427: AttributeError
+______ test_strict_payload_and_domain[{"CURLOPT_CONNECTTIMEOUT": true}] _______
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x000001DD40CC40E0>
+payload = '{"CURLOPT_CONNECTTIMEOUT": true}'
+
+    @pytest.mark.parametrize('payload',['{"CURLOPT_CONNECTTIMEOUT": true}','{"CURLOPT_CONNECTTIMEOUT": 0}','{"CURLOPT_CONNECTTIMEOUT": 3601}','{"CURLOPT_CONNECTTIMEOUT": 1.5}','{"CURLOPT_CONNECTTIMEOUT": 2, "extra":1}','{}','{"CURLOPT_CONNECTTIMEOUT":1,"CURLOPT_CONNECTTIMEOUT":2}'])
+    def test_strict_payload_and_domain(direct_vm,direct_deploy,payload):
+>       c=deploy(direct_vm,direct_deploy);approved(direct_vm,c)
+                                          ^^^^^^^^^^^^^^^^^^^^^
+
+contributions\genlayer-2026-10-21\profile04\contracts\unit-safe-crosswalk\tests\test_crosswalk.py:63: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+contributions\genlayer-2026-10-21\profile04\contracts\unit-safe-crosswalk\tests\test_crosswalk.py:34: in approved
+    locked(vm,c,reverse);c.assess('curl')
+    ^^^^^^^^^^^^^^^^^^^^
+contributions\genlayer-2026-10-21\profile04\contracts\unit-safe-crosswalk\tests\test_crosswalk.py:30: in locked
+    c.register('curl',json.dumps(spec(reverse)))
+    ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <CalldataProxy for <_contract_unit_safe_crosswalk.UnitSafeCrosswalk object at 0x000001DD40C257C0>>
+name = 'register'
+
+    def _proxy_getattr(self: Any, name: str) -> Any:
+        inst = object.__getattribute__(self, '_instance')
+>       attr = getattr(inst, name)
+               ^^^^^^^^^^^^^^^^^^^
+E       AttributeError: 'UnitSafeCrosswalk' object has no attribute 'register'
+
+contributions\genlayer-2026-10-21\tooling\.venv\Lib\site-packages\gltest\direct\loader.py:427: AttributeError
+________ test_strict_payload_and_domain[{"CURLOPT_CONNECTTIMEOUT": 0}] ________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x000001DD40D1D4E0>
+payload = '{"CURLOPT_CONNECTTIMEOUT": 0}'
+
+    @pytest.mark.parametrize('payload',['{"CURLOPT_CONNECTTIMEOUT": true}','{"CURLOPT_CONNECTTIMEOUT": 0}','{"CURLOPT_CONNECTTIMEOUT": 3601}','{"CURLOPT_CONNECTTIMEOUT": 1.5}','{"CURLOPT_CONNECTTIMEOUT": 2, "extra":1}','{}','{"CURLOPT_CONNECTTIMEOUT":1,"CURLOPT_CONNECTTIMEOUT":2}'])
+    def test_strict_payload_and_domain(direct_vm,direct_deploy,payload):
+>       c=deploy(direct_vm,direct_deploy);approved(direct_vm,c)
+                                          ^^^^^^^^^^^^^^^^^^^^^
+
+contributions\genlayer-2026-10-21\profile04\contracts\unit-safe-crosswalk\tests\test_crosswalk.py:63: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+contributions\genlayer-2026-10-21\profile04\contracts\unit-safe-crosswalk\tests\test_crosswalk.py:34: in approved
+    locked(vm,c,reverse);c.assess('curl')
+    ^^^^^^^^^^^^^^^^^^^^
+contributions\genlayer-2026-10-21\profile04\contracts\unit-safe-crosswalk\tests\test_crosswalk.py:30: in locked
+    c.register('curl',json.dumps(spec(reverse)))
+    ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <CalldataProxy for <_contract_unit_safe_crosswalk.UnitSafeCrosswalk object at 0x000001DD40DCEA20>>
+name = 'register'
+
+    def _proxy_getattr(self: Any, name: str) -> Any:
+        inst = object.__getattribute__(self, '_instance')
+>       attr = getattr(inst, name)
+               ^^^^^^^^^^^^^^^^^^^
+E       AttributeError: 'UnitSafeCrosswalk' object has no attribute 'register'
+
+contributions\genlayer-2026-10-21\tooling\.venv\Lib\site-packages\gltest\direct\loader.py:427: AttributeError
+______ test_strict_payload_and_domain[{"CURLOPT_CONNECTTIMEOUT": 3601}] _______
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x000001DD40DEB060>
+payload = '{"CURLOPT_CONNECTTIMEOUT": 3601}'
+
+    @pytest.mark.parametrize('payload',['{"CURLOPT_CONNECTTIMEOUT": true}','{"CURLOPT_CONNECTTIMEOUT": 0}','{"CURLOPT_CONNECTTIMEOUT": 3601}','{"CURLOPT_CONNECTTIMEOUT": 1.5}','{"CURLOPT_CONNECTTIMEOUT": 2, "extra":1}','{}','{"CURLOPT_CONNECTTIMEOUT":1,"CURLOPT_CONNECTTIMEOUT":2}'])
+    def test_strict_payload_and_domain(direct_vm,direct_deploy,payload):
+>       c=deploy(direct_vm,direct_deploy);approved(direct_vm,c)
+                                          ^^^^^^^^^^^^^^^^^^^^^
+
+contributions\genlayer-2026-10-21\profile04\contracts\unit-safe-crosswalk\tests\test_crosswalk.py:63: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+contributions\genlayer-2026-10-21\profile04\contracts\unit-safe-crosswalk\tests\test_crosswalk.py:34: in approved
+    locked(vm,c,reverse);c.assess('curl')
+    ^^^^^^^^^^^^^^^^^^^^
+contributions\genlayer-2026-10-21\profile04\contracts\unit-safe-crosswalk\tests\test_crosswalk.py:30: in locked
+    c.register('curl',json.dumps(spec(reverse)))
+    ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <CalldataProxy for <_contract_unit_safe_crosswalk.UnitSafeCrosswalk object at 0x000001DD40DF3E90>>
+name = 'register'
+
+    def _proxy_getattr(self: Any, name: str) -> Any:
+        inst = object.__getattribute__(self, '_instance')
+>       attr = getattr(inst, name)
+               ^^^^^^^^^^^^^^^^^^^
+E       AttributeError: 'UnitSafeCrosswalk' object has no attribute 'register'
+
+contributions\genlayer-2026-10-21\tooling\.venv\Lib\site-packages\gltest\direct\loader.py:427: AttributeError
+_______ test_strict_payload_and_domain[{"CURLOPT_CONNECTTIMEOUT": 1.5}] _______
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x000001DD40E30860>
+payload = '{"CURLOPT_CONNECTTIMEOUT": 1.5}'
+
+    @pytest.mark.parametrize('payload',['{"CURLOPT_CONNECTTIMEOUT": true}','{"CURLOPT_CONNECTTIMEOUT": 0}','{"CURLOPT_CONNECTTIMEOUT": 3601}','{"CURLOPT_CONNECTTIMEOUT": 1.5}','{"CURLOPT_CONNECTTIMEOUT": 2, "extra":1}','{}','{"CURLOPT_CONNECTTIMEOUT":1,"CURLOPT_CONNECTTIMEOUT":2}'])
+    def test_strict_payload_and_domain(direct_vm,direct_deploy,payload):
+>       c=deploy(direct_vm,direct_deploy);approved(direct_vm,c)
+                                          ^^^^^^^^^^^^^^^^^^^^^
+
+contributions\genlayer-2026-10-21\profile04\contracts\unit-safe-crosswalk\tests\test_crosswalk.py:63: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+contributions\genlayer-2026-10-21\profile04\contracts\unit-safe-crosswalk\tests\test_crosswalk.py:34: in approved
+    locked(vm,c,reverse);c.assess('curl')
+    ^^^^^^^^^^^^^^^^^^^^
+contributions\genlayer-2026-10-21\profile04\contracts\unit-safe-crosswalk\tests\test_crosswalk.py:30: in locked
+    c.register('curl',json.dumps(spec(reverse)))
+    ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <CalldataProxy for <_contract_unit_safe_crosswalk.UnitSafeCrosswalk object at 0x000001DD40DF3FE0>>
+name = 'register'
+
+    def _proxy_getattr(self: Any, name: str) -> Any:
+        inst = object.__getattribute__(self, '_instance')
+>       attr = getattr(inst, name)
+               ^^^^^^^^^^^^^^^^^^^
+E       AttributeError: 'UnitSafeCrosswalk' object has no attribute 'register'
+
+contributions\genlayer-2026-10-21\tooling\.venv\Lib\site-packages\gltest\direct\loader.py:427: AttributeError
+__ test_strict_payload_and_domain[{"CURLOPT_CONNECTTIMEOUT": 2, "extra":1}] ___
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x000001DD40E75DA0>
+payload = '{"CURLOPT_CONNECTTIMEOUT": 2, "extra":1}'
+
+    @pytest.mark.parametrize('payload',['{"CURLOPT_CONNECTTIMEOUT": true}','{"CURLOPT_CONNECTTIMEOUT": 0}','{"CURLOPT_CONNECTTIMEOUT": 3601}','{"CURLOPT_CONNECTTIMEOUT": 1.5}','{"CURLOPT_CONNECTTIMEOUT": 2, "extra":1}','{}','{"CURLOPT_CONNECTTIMEOUT":1,"CURLOPT_CONNECTTIMEOUT":2}'])
+    def test_strict_payload_and_domain(direct_vm,direct_deploy,payload):
+>       c=deploy(direct_vm,direct_deploy);approved(direct_vm,c)
+                                          ^^^^^^^^^^^^^^^^^^^^^
+
+contributions\genlayer-2026-10-21\profile04\contracts\unit-safe-crosswalk\tests\test_crosswalk.py:63: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+contributions\genlayer-2026-10-21\profile04\contracts\unit-safe-crosswalk\tests\test_crosswalk.py:34: in approved
+    locked(vm,c,reverse);c.assess('curl')
+    ^^^^^^^^^^^^^^^^^^^^
+contributions\genlayer-2026-10-21\profile04\contracts\unit-safe-crosswalk\tests\test_crosswalk.py:30: in locked
+    c.register('curl',json.dumps(spec(reverse)))
+    ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <CalldataProxy for <_contract_unit_safe_crosswalk.UnitSafeCrosswalk object at 0x000001DD40A20620>>
+name = 'register'
+
+    def _proxy_getattr(self: Any, name: str) -> Any:
+        inst = object.__getattribute__(self, '_instance')
+>       attr = getattr(inst, name)
+               ^^^^^^^^^^^^^^^^^^^
+E       AttributeError: 'UnitSafeCrosswalk' object has no attribute 'register'
+
+contributions\genlayer-2026-10-21\tooling\.venv\Lib\site-packages\gltest\direct\loader.py:427: AttributeError
+_____________________ test_strict_payload_and_domain[{}] ______________________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x000001DD40F9BA60>
+payload = '{}'
+
+    @pytest.mark.parametrize('payload',['{"CURLOPT_CONNECTTIMEOUT": true}','{"CURLOPT_CONNECTTIMEOUT": 0}','{"CURLOPT_CONNECTTIMEOUT": 3601}','{"CURLOPT_CONNECTTIMEOUT": 1.5}','{"CURLOPT_CONNECTTIMEOUT": 2, "extra":1}','{}','{"CURLOPT_CONNECTTIMEOUT":1,"CURLOPT_CONNECTTIMEOUT":2}'])
+    def test_strict_payload_and_domain(direct_vm,direct_deploy,payload):
+>       c=deploy(direct_vm,direct_deploy);approved(direct_vm,c)
+                                          ^^^^^^^^^^^^^^^^^^^^^
+
+contributions\genlayer-2026-10-21\profile04\contracts\unit-safe-crosswalk\tests\test_crosswalk.py:63: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+contributions\genlayer-2026-10-21\profile04\contracts\unit-safe-crosswalk\tests\test_crosswalk.py:34: in approved
+    locked(vm,c,reverse);c.assess('curl')
+    ^^^^^^^^^^^^^^^^^^^^
+contributions\genlayer-2026-10-21\profile04\contracts\unit-safe-crosswalk\tests\test_crosswalk.py:30: in locked
+    c.register('curl',json.dumps(spec(reverse)))
+    ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <CalldataProxy for <_contract_unit_safe_crosswalk.UnitSafeCrosswalk object at 0x000001DD40FA6BA0>>
+name = 'register'
+
+    def _proxy_getattr(self: Any, name: str) -> Any:
+        inst = object.__getattribute__(self, '_instance')
+>       attr = getattr(inst, name)
+               ^^^^^^^^^^^^^^^^^^^
+E       AttributeError: 'UnitSafeCrosswalk' object has no attribute 'register'
+
+contributions\genlayer-2026-10-21\tooling\.venv\Lib\site-packages\gltest\direct\loader.py:427: AttributeError
+_ test_strict_payload_and_domain[{"CURLOPT_CONNECTTIMEOUT":1,"CURLOPT_CONNECTTIMEOUT":2}] _
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x000001DD41029080>
+payload = '{"CURLOPT_CONNECTTIMEOUT":1,"CURLOPT_CONNECTTIMEOUT":2}'
+
+    @pytest.mark.parametrize('payload',['{"CURLOPT_CONNECTTIMEOUT": true}','{"CURLOPT_CONNECTTIMEOUT": 0}','{"CURLOPT_CONNECTTIMEOUT": 3601}','{"CURLOPT_CONNECTTIMEOUT": 1.5}','{"CURLOPT_CONNECTTIMEOUT": 2, "extra":1}','{}','{"CURLOPT_CONNECTTIMEOUT":1,"CURLOPT_CONNECTTIMEOUT":2}'])
+    def test_strict_payload_and_domain(direct_vm,direct_deploy,payload):
+>       c=deploy(direct_vm,direct_deploy);approved(direct_vm,c)
+                                          ^^^^^^^^^^^^^^^^^^^^^
+
+contributions\genlayer-2026-10-21\profile04\contracts\unit-safe-crosswalk\tests\test_crosswalk.py:63: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+contributions\genlayer-2026-10-21\profile04\contracts\unit-safe-crosswalk\tests\test_crosswalk.py:34: in approved
+    locked(vm,c,reverse);c.assess('curl')
+    ^^^^^^^^^^^^^^^^^^^^
+contributions\genlayer-2026-10-21\profile04\contracts\unit-safe-crosswalk\tests\test_crosswalk.py:30: in locked
+    c.register('curl',json.dumps(spec(reverse)))
+    ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <CalldataProxy for <_contract_unit_safe_crosswalk.UnitSafeCrosswalk object at 0x000001DD410D9F10>>
+name = 'register'
+
+    def _proxy_getattr(self: Any, name: str) -> Any:
+        inst = object.__getattribute__(self, '_instance')
+>       attr = getattr(inst, name)
+               ^^^^^^^^^^^^^^^^^^^
+E       AttributeError: 'UnitSafeCrosswalk' object has no attribute 'register'
+
+contributions\genlayer-2026-10-21\tooling\.venv\Lib\site-packages\gltest\direct\loader.py:427: AttributeError
+______ test_no_reroll_and_no_transform_without_match[DIFFERENT-REJECTED] ______
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x000001DD410EAAC0>
+decision = 'DIFFERENT', status = 'REJECTED'
+
+    @pytest.mark.parametrize('decision,status',[('DIFFERENT','REJECTED'),('UNCERTAIN','UNCERTAIN')])
+    def test_no_reroll_and_no_transform_without_match(direct_vm,direct_deploy,decision,status):
+>       c=deploy(direct_vm,direct_deploy);locked(direct_vm,c);direct_vm.clear_mocks();serve(direct_vm);model(direct_vm,decision)
+                                          ^^^^^^^^^^^^^^^^^^^
+
+contributions\genlayer-2026-10-21\profile04\contracts\unit-safe-crosswalk\tests\test_crosswalk.py:68: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+contributions\genlayer-2026-10-21\profile04\contracts\unit-safe-crosswalk\tests\test_crosswalk.py:30: in locked
+    c.register('curl',json.dumps(spec(reverse)))
+    ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <CalldataProxy for <_contract_unit_safe_crosswalk.UnitSafeCrosswalk object at 0x000001DD41164B90>>
+name = 'register'
+
+    def _proxy_getattr(self: Any, name: str) -> Any:
+        inst = object.__getattribute__(self, '_instance')
+>       attr = getattr(inst, name)
+               ^^^^^^^^^^^^^^^^^^^
+E       AttributeError: 'UnitSafeCrosswalk' object has no attribute 'register'
+
+contributions\genlayer-2026-10-21\tooling\.venv\Lib\site-packages\gltest\direct\loader.py:427: AttributeError
+_____ test_no_reroll_and_no_transform_without_match[UNCERTAIN-UNCERTAIN] ______
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x000001DD41137E20>
+decision = 'UNCERTAIN', status = 'UNCERTAIN'
+
+    @pytest.mark.parametrize('decision,status',[('DIFFERENT','REJECTED'),('UNCERTAIN','UNCERTAIN')])
+    def test_no_reroll_and_no_transform_without_match(direct_vm,direct_deploy,decision,status):
+>       c=deploy(direct_vm,direct_deploy);locked(direct_vm,c);direct_vm.clear_mocks();serve(direct_vm);model(direct_vm,decision)
+                                          ^^^^^^^^^^^^^^^^^^^
+
+contributions\genlayer-2026-10-21\profile04\contracts\unit-safe-crosswalk\tests\test_crosswalk.py:68: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+contributions\genlayer-2026-10-21\profile04\contracts\unit-safe-crosswalk\tests\test_crosswalk.py:30: in locked
+    c.register('curl',json.dumps(spec(reverse)))
+    ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <CalldataProxy for <_contract_unit_safe_crosswalk.UnitSafeCrosswalk object at 0x000001DD41156A50>>
+name = 'register'
+
+    def _proxy_getattr(self: Any, name: str) -> Any:
+        inst = object.__getattribute__(self, '_instance')
+>       attr = getattr(inst, name)
+               ^^^^^^^^^^^^^^^^^^^
+E       AttributeError: 'UnitSafeCrosswalk' object has no attribute 'register'
+
+contributions\genlayer-2026-10-21\tooling\.venv\Lib\site-packages\gltest\direct\loader.py:427: AttributeError
+__________________ test_bijection_and_unit_dimensions_locked __________________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x000001DD411919E0>
+
+    def test_bijection_and_unit_dimensions_locked(direct_vm,direct_deploy):
+        c=deploy(direct_vm,direct_deploy)
+        s=spec();s['pairs'][0]['target_unit']='KiB'
+>       with direct_vm.expect_revert('dimension'): c.register('bad',json.dumps(s))
+                                                   ^^^^^^^^^^
+
+contributions\genlayer-2026-10-21\profile04\contracts\unit-safe-crosswalk\tests\test_crosswalk.py:77: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <CalldataProxy for <_contract_unit_safe_crosswalk.UnitSafeCrosswalk object at 0x000001DD4127E7B0>>
+name = 'register'
+
+    def _proxy_getattr(self: Any, name: str) -> Any:
+        inst = object.__getattribute__(self, '_instance')
+>       attr = getattr(inst, name)
+               ^^^^^^^^^^^^^^^^^^^
+E       AttributeError: 'UnitSafeCrosswalk' object has no attribute 'register'
+
+contributions\genlayer-2026-10-21\tooling\.venv\Lib\site-packages\gltest\direct\loader.py:427: AttributeError
+
+During handling of the above exception, another exception occurred:
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x000001DD411919E0>
+
+    def test_bijection_and_unit_dimensions_locked(direct_vm,direct_deploy):
+        c=deploy(direct_vm,direct_deploy)
+        s=spec();s['pairs'][0]['target_unit']='KiB'
+>       with direct_vm.expect_revert('dimension'): c.register('bad',json.dumps(s))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+contributions\genlayer-2026-10-21\profile04\contracts\unit-safe-crosswalk\tests\test_crosswalk.py:77: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\..\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\contextlib.py:158: in __exit__
+    self.gen.throw(value)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+message = 'dimension'
+
+    @contextmanager
+    def expect_revert(self, message: Optional[str] = None):
+        """Context manager expecting the next call to revert.
+    
+        Catches ContractRollback (gl.rollback) and any Exception raised
+        by contract code (ValueError, RuntimeError, etc.). If *message*
+        is given, the exception text must contain it.
+        """
+        from .wasi_mock import ContractRollback
+    
+        self._expect_revert = message
+        self._expect_revert_any = message is None
+    
+        try:
+            yield
+            raise AssertionError(
+                f"Expected revert{f' with message: {message}' if message else ''}, but call succeeded"
+            )
+        except AssertionError:
+            raise
+        except ContractRollback as e:
+            if message is not None and message not in e.message:
+                raise AssertionError(
+                    f"Expected revert with message '{message}', got '{e.message}'"
+                )
+        except Exception as e:
+            if message is not None and message not in str(e):
+>               raise AssertionError(
+                    f"Expected revert with message '{message}', got '{e}'"
+                )
+E               AssertionError: Expected revert with message 'dimension', got ''UnitSafeCrosswalk' object has no attribute 'register''
+
+contributions\genlayer-2026-10-21\tooling\.venv\Lib\site-packages\gltest\direct\vm.py:416: AssertionError
+__________________ test_owner_access_and_terminal_revocation __________________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x000001DD4129F060>
+
+    def test_owner_access_and_terminal_revocation(direct_vm,direct_deploy):
+>       c=deploy(direct_vm,direct_deploy);approved(direct_vm,c)
+                                          ^^^^^^^^^^^^^^^^^^^^^
+
+contributions\genlayer-2026-10-21\profile04\contracts\unit-safe-crosswalk\tests\test_crosswalk.py:84: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+contributions\genlayer-2026-10-21\profile04\contracts\unit-safe-crosswalk\tests\test_crosswalk.py:34: in approved
+    locked(vm,c,reverse);c.assess('curl')
+    ^^^^^^^^^^^^^^^^^^^^
+contributions\genlayer-2026-10-21\profile04\contracts\unit-safe-crosswalk\tests\test_crosswalk.py:30: in locked
+    c.register('curl',json.dumps(spec(reverse)))
+    ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <CalldataProxy for <_contract_unit_safe_crosswalk.UnitSafeCrosswalk object at 0x000001DD4120F470>>
+name = 'register'
+
+    def _proxy_getattr(self: Any, name: str) -> Any:
+        inst = object.__getattribute__(self, '_instance')
+>       attr = getattr(inst, name)
+               ^^^^^^^^^^^^^^^^^^^
+E       AttributeError: 'UnitSafeCrosswalk' object has no attribute 'register'
+
+contributions\genlayer-2026-10-21\tooling\.venv\Lib\site-packages\gltest\direct\loader.py:427: AttributeError
+_____________ test_source_pinning_and_hash_checked_at_assessment ______________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x000001DD41344860>
+
+    def test_source_pinning_and_hash_checked_at_assessment(direct_vm,direct_deploy):
+        c=deploy(direct_vm,direct_deploy);s=spec();s['source']['url']=s['source']['url'].replace('8f143e852f2c5ef5a10a9af20ac04617e5dfef83','main')
+>       with direct_vm.expect_revert('commit-pinned'): c.register('bad',json.dumps(s))
+                                                       ^^^^^^^^^^
+
+contributions\genlayer-2026-10-21\profile04\contracts\unit-safe-crosswalk\tests\test_crosswalk.py:95: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <CalldataProxy for <_contract_unit_safe_crosswalk.UnitSafeCrosswalk object at 0x000001DD41373EC0>>
+name = 'register'
+
+    def _proxy_getattr(self: Any, name: str) -> Any:
+        inst = object.__getattribute__(self, '_instance')
+>       attr = getattr(inst, name)
+               ^^^^^^^^^^^^^^^^^^^
+E       AttributeError: 'UnitSafeCrosswalk' object has no attribute 'register'
+
+contributions\genlayer-2026-10-21\tooling\.venv\Lib\site-packages\gltest\direct\loader.py:427: AttributeError
+
+During handling of the above exception, another exception occurred:
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x000001DD41344860>
+
+    def test_source_pinning_and_hash_checked_at_assessment(direct_vm,direct_deploy):
+        c=deploy(direct_vm,direct_deploy);s=spec();s['source']['url']=s['source']['url'].replace('8f143e852f2c5ef5a10a9af20ac04617e5dfef83','main')
+>       with direct_vm.expect_revert('commit-pinned'): c.register('bad',json.dumps(s))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+contributions\genlayer-2026-10-21\profile04\contracts\unit-safe-crosswalk\tests\test_crosswalk.py:95: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\..\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\contextlib.py:158: in __exit__
+    self.gen.throw(value)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+message = 'commit-pinned'
+
+    @contextmanager
+    def expect_revert(self, message: Optional[str] = None):
+        """Context manager expecting the next call to revert.
+    
+        Catches ContractRollback (gl.rollback) and any Exception raised
+        by contract code (ValueError, RuntimeError, etc.). If *message*
+        is given, the exception text must contain it.
+        """
+        from .wasi_mock import ContractRollback
+    
+        self._expect_revert = message
+        self._expect_revert_any = message is None
+    
+        try:
+            yield
+            raise AssertionError(
+                f"Expected revert{f' with message: {message}' if message else ''}, but call succeeded"
+            )
+        except AssertionError:
+            raise
+        except ContractRollback as e:
+            if message is not None and message not in e.message:
+                raise AssertionError(
+                    f"Expected revert with message '{message}', got '{e.message}'"
+                )
+        except Exception as e:
+            if message is not None and message not in str(e):
+>               raise AssertionError(
+                    f"Expected revert with message '{message}', got '{e}'"
+                )
+E               AssertionError: Expected revert with message 'commit-pinned', got ''UnitSafeCrosswalk' object has no attribute 'register''
+
+contributions\genlayer-2026-10-21\tooling\.venv\Lib\site-packages\gltest\direct\vm.py:416: AssertionError
+_____________________ test_invalid_model_schema_and_quote _____________________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x000001DD41391BC0>
+
+    def test_invalid_model_schema_and_quote(direct_vm,direct_deploy):
+>       c=deploy(direct_vm,direct_deploy);locked(direct_vm,c)
+                                          ^^^^^^^^^^^^^^^^^^^
+
+contributions\genlayer-2026-10-21\profile04\contracts\unit-safe-crosswalk\tests\test_crosswalk.py:101: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+contributions\genlayer-2026-10-21\profile04\contracts\unit-safe-crosswalk\tests\test_crosswalk.py:30: in locked
+    c.register('curl',json.dumps(spec(reverse)))
+    ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <CalldataProxy for <_contract_unit_safe_crosswalk.UnitSafeCrosswalk object at 0x000001DD413EF050>>
+name = 'register'
+
+    def _proxy_getattr(self: Any, name: str) -> Any:
+        inst = object.__getattribute__(self, '_instance')
+>       attr = getattr(inst, name)
+               ^^^^^^^^^^^^^^^^^^^
+E       AttributeError: 'UnitSafeCrosswalk' object has no attribute 'register'
+
+contributions\genlayer-2026-10-21\tooling\.venv\Lib\site-packages\gltest\direct\loader.py:427: AttributeError
+=========================== short test summary info ===========================
+FAILED contributions\genlayer-2026-10-21\profile04\contracts\unit-safe-crosswalk\tests\test_crosswalk.py::test_real_documents_consensus_and_exact_transform
+FAILED contributions\genlayer-2026-10-21\profile04\contracts\unit-safe-crosswalk\tests\test_crosswalk.py::test_independent_semantic_disagreement_rejected
+FAILED contributions\genlayer-2026-10-21\profile04\contracts\unit-safe-crosswalk\tests\test_crosswalk.py::test_forged_leader_quote_rejected
+FAILED contributions\genlayer-2026-10-21\profile04\contracts\unit-safe-crosswalk\tests\test_crosswalk.py::test_fractional_integer_conversion_is_rejected
+FAILED contributions\genlayer-2026-10-21\profile04\contracts\unit-safe-crosswalk\tests\test_crosswalk.py::test_strict_payload_and_domain[{"CURLOPT_CONNECTTIMEOUT": true}]
+FAILED contributions\genlayer-2026-10-21\profile04\contracts\unit-safe-crosswalk\tests\test_crosswalk.py::test_strict_payload_and_domain[{"CURLOPT_CONNECTTIMEOUT": 0}]
+FAILED contributions\genlayer-2026-10-21\profile04\contracts\unit-safe-crosswalk\tests\test_crosswalk.py::test_strict_payload_and_domain[{"CURLOPT_CONNECTTIMEOUT": 3601}]
+FAILED contributions\genlayer-2026-10-21\profile04\contracts\unit-safe-crosswalk\tests\test_crosswalk.py::test_strict_payload_and_domain[{"CURLOPT_CONNECTTIMEOUT": 1.5}]
+FAILED contributions\genlayer-2026-10-21\profile04\contracts\unit-safe-crosswalk\tests\test_crosswalk.py::test_strict_payload_and_domain[{"CURLOPT_CONNECTTIMEOUT": 2, "extra":1}]
+FAILED contributions\genlayer-2026-10-21\profile04\contracts\unit-safe-crosswalk\tests\test_crosswalk.py::test_strict_payload_and_domain[{}]
+FAILED contributions\genlayer-2026-10-21\profile04\contracts\unit-safe-crosswalk\tests\test_crosswalk.py::test_strict_payload_and_domain[{"CURLOPT_CONNECTTIMEOUT":1,"CURLOPT_CONNECTTIMEOUT":2}]
+FAILED contributions\genlayer-2026-10-21\profile04\contracts\unit-safe-crosswalk\tests\test_crosswalk.py::test_no_reroll_and_no_transform_without_match[DIFFERENT-REJECTED]
+FAILED contributions\genlayer-2026-10-21\profile04\contracts\unit-safe-crosswalk\tests\test_crosswalk.py::test_no_reroll_and_no_transform_without_match[UNCERTAIN-UNCERTAIN]
+FAILED contributions\genlayer-2026-10-21\profile04\contracts\unit-safe-crosswalk\tests\test_crosswalk.py::test_bijection_and_unit_dimensions_locked
+FAILED contributions\genlayer-2026-10-21\profile04\contracts\unit-safe-crosswalk\tests\test_crosswalk.py::test_owner_access_and_terminal_revocation
+FAILED contributions\genlayer-2026-10-21\profile04\contracts\unit-safe-crosswalk\tests\test_crosswalk.py::test_source_pinning_and_hash_checked_at_assessment
+FAILED contributions\genlayer-2026-10-21\profile04\contracts\unit-safe-crosswalk\tests\test_crosswalk.py::test_invalid_model_schema_and_quote
+17 failed in 2.11s

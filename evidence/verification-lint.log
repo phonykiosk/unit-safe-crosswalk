@@ -1,0 +1,1 @@
+{"ok":true,"lint":{"ok":true,"passed":3},"validate":{"ok":true,"contract":"UnitSafeCrosswalk","methods":5,"view_methods":2,"write_methods":3,"ctor_params":0}}

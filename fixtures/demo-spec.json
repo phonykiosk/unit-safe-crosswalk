@@ -1,0 +1,22 @@
+{
+  "source": {
+    "url": "https://raw.githubusercontent.com/curl/curl/8f143e852f2c5ef5a10a9af20ac04617e5dfef83/docs/libcurl/opts/CURLOPT_CONNECTTIMEOUT.md",
+    "sha256": "8c78827746e08c93e09be527e1891bf3947567c3f0bb0f2beb1ddb671fe4b545"
+  },
+  "target": {
+    "url": "https://raw.githubusercontent.com/curl/curl/8f143e852f2c5ef5a10a9af20ac04617e5dfef83/docs/libcurl/opts/CURLOPT_CONNECTTIMEOUT_MS.md",
+    "sha256": "ff9eae74eccc1324e04facc8e7951e33fecfef7c94e5cef9b2b5e6c71cd3bc14"
+  },
+  "pairs": [
+    {
+      "source_field": "CURLOPT_CONNECTTIMEOUT",
+      "target_field": "CURLOPT_CONNECTTIMEOUT_MS",
+      "source_unit": "s",
+      "target_unit": "ms",
+      "source_min": 1,
+      "source_max": 3600,
+      "target_min": 1,
+      "target_max": 3600000
+    }
+  ]
+}

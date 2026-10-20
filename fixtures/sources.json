@@ -1,0 +1,20 @@
+[
+  {
+    "file": "curl-seconds.md",
+    "url": "https://raw.githubusercontent.com/curl/curl/8f143e852f2c5ef5a10a9af20ac04617e5dfef83/docs/libcurl/opts/CURLOPT_CONNECTTIMEOUT.md",
+    "sha256": "8c78827746e08c93e09be527e1891bf3947567c3f0bb0f2beb1ddb671fe4b545",
+    "bytes": 2368,
+    "retrieved_on": "2026-10-21",
+    "kind": "real public curl option documentation",
+    "test_transport": "mocked real byte snapshot"
+  },
+  {
+    "file": "curl-milliseconds.md",
+    "url": "https://raw.githubusercontent.com/curl/curl/8f143e852f2c5ef5a10a9af20ac04617e5dfef83/docs/libcurl/opts/CURLOPT_CONNECTTIMEOUT_MS.md",
+    "sha256": "ff9eae74eccc1324e04facc8e7951e33fecfef7c94e5cef9b2b5e6c71cd3bc14",
+    "bytes": 2477,
+    "retrieved_on": "2026-10-21",
+    "kind": "real public curl option documentation",
+    "test_transport": "mocked real byte snapshot"
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "at": "2026-10-20T22:52:19.204Z",
+  "title": "UnitSafeCrosswalk",
+  "kind": "independent_intelligent_contract",
+  "profileSeq": 4,
+  "contractAddress": "0x1E83D28d6F08217F90e250542f5059Da17ad94E7",
+  "transactionHash": "0x27797f167539c75e48af2c5101aecda1f27bd94a03cebfa9085380edc653e1c1",
+  "sourceSha256": "281bb3919461fe000110260f65071903372ae462cebcad198b7c6e591029fe9e",
+  "network": "GenLayer Studio",
+  "chainId": 61999,
+  "constructorArgs": [],
+  "state": "FINALIZED",
+  "executionResult": "SUCCESS",
+  "executionMode": "NORMAL",
+  "leaderOnly": false,
+  "consensusResult": "MAJORITY_AGREE",
+  "value": 0,
+  "liveScope": "Constructor only; full real-source register/assess/transform/revoke flow not exercised live.",
+  "publicSourceBytesVerified": false,
+  "onchainSourceSha256": "281bb3919461fe000110260f65071903372ae462cebcad198b7c6e591029fe9e"
+}
